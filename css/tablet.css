@@ -1,0 +1,111 @@
+/* ================================================
+HEADER
+================================================ */
+/* BRAND LOGO */
+.brand-logo {
+    margin-top: 3rem;
+}
+.brand-logo h1 {
+    font-size: 4rem;
+}
+.brand-logo i {
+    font-size: 5rem;
+}
+
+/* NAV MENU */
+.nav-menu--content {
+    margin: 3rem auto;
+}
+.nav-menu--content li a {
+    font-size: 2rem;
+}
+
+/* ================================================
+HERO
+================================================ */
+.hero h1 {
+    font-size: 4rem;
+    line-height: 5rem;
+}
+
+/* ================================================
+BARRA INFO
+================================================ */
+.barra {
+    height: 30rem;
+    background: var(--warm);
+    /* Del color al que inicia al color al que va al ponerle 2 parámetros */
+    color: var(--justWhite);
+    display: flex;
+    align-items: center;
+    padding: 1.5rem 1.8rem;
+    margin: 0;
+}
+.icono p {
+    font-size: 2.1rem;
+}
+.icono i {
+    font-size: 3rem;
+}
+
+/* ================================================
+SERVICIO
+================================================ */
+.servicio-general {
+    margin-bottom: 7rem;
+}
+.servicio-general p {
+    margin-bottom: 4rem;
+}
+#servicio {
+    padding: 7rem 0 0 0;
+    margin: 0;
+}
+
+  /* TARJETAS SERVICIOS */
+.tarjetas-grid-container {
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem 4rem;
+}
+.tarjeta-header h3 {
+    font-size: 1.7rem;
+}
+.tarjeta-informacion p {
+    margin-bottom: 0;
+    font-size: 1.4rem;
+}
+
+.tarjeta-header i {
+    font-size: 3rem;
+    padding-right: 2rem;
+}
+
+/* ================================================
+CURSOS
+================================================ */
+/* CURSOS TARJETAS */
+.card-grid{
+    grid-template-columns: 1fr 1fr; 
+}
+
+/* ================================================
+CONTACTO
+================================================ */
+.contacto-general form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+/* ================================================
+SITE FOOTER
+================================================ */
+/* FOOTER MENU */
+.footer-nav--content li {
+    font-size: 1.7rem;
+}
+.footer-social--content li i{
+    padding-left: 2.5rem;
+    color: var(--justWhite);
+    font-size: 3rem;
+}

@@ -1,0 +1,90 @@
+/* ================================================
+HEADER
+================================================ */
+/* BRAND LOGO */
+.brand-logo {
+    margin: 3rem 0;
+}
+.brand-logo h1 {
+    font-size: 5rem;
+}
+.brand-logo i {
+    font-size: 5rem;
+}
+
+/* ================================================
+HERO
+================================================ */
+.hero {
+    height: 70vh;
+    background-size: cover;
+}
+.hero h1 {
+    font-size: 5rem;
+    line-height: 6rem;
+}
+
+/* ================================================
+BARRA INFO
+================================================ */
+.icono p {
+    font-size: 3rem;
+}
+.icono i {
+    font-size: 3.5rem;
+}
+
+/* ================================================
+SERVICIO
+================================================ */
+.servicio-general {
+    margin-bottom: 7rem;
+}
+.servicio-general p {
+    margin-bottom: 4rem;
+}
+#servicio {
+    padding: 7rem 0 0 0;
+    margin: 0;
+}
+
+/* TARJETAS SERVICIOS */
+.tarjetas-grid-container {
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 4rem 4rem;
+}
+
+/* ================================================
+CURSOS
+================================================ */
+.cursos-txt {
+    padding: 4rem 0 2rem 0;
+    color: var(--justWhite);
+}
+
+/* CURSOS TARJETAS */
+.card {
+    transition: all 400ms ease;
+    border-radius: 2.4rem;
+    height: 450px;
+}
+.card:hover {
+    box-shadow: .5rem .5rem 2.4rem rgba(230, 230, 230, .5);
+    transform: translateY(-3%);
+}
+.card-grid{
+    grid-template-columns: repeat(4, 1fr);
+}
+.card__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+.card__content p {
+    font-size: 1.5rem;
+}
+.card__heading{
+    font-size: 2rem;
+}

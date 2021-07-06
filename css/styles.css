@@ -1,0 +1,408 @@
+/* ========================================= 
+VARIABLES FUENTES / COLORES
+=========================================== */
+:root {
+  /* FUENTES */
+  --fuenteTitulos: 'Oswald', sans-serif;;
+  --fuenteTextos: 'Roboto', sans-serif;
+  --fuenteCodigo: 'JetBrains Mono', monospace;
+
+  /* COLORES */
+  --black: #353230;
+  --warm: #3C3C4F;
+  --dark: #0A0A23;
+  --justWhite: #FFFFFF;
+
+  /* TARJETAS CURSOS */
+  --spacing-l: 24px;
+  --spacing-xl: 32px;
+  --spacing-xxl: 64px;
+  --width-container: 1200px;
+}
+
+/* ========================================= 
+BOX-SIZING / FONT SIZE
+=========================================== */
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* ================================================
+GLOBALES
+================================================ */
+body {
+  font-family: var(--fuenteCodigo);
+  font-size: 1.6rem;
+}
+.contenedor {
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 90%;
+}
+a {
+  text-decoration: none;
+  color: var(--justWhite);
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+p {
+  line-height: 2.5rem;
+}
+h2 {
+  font-size: 3rem;
+  line-height: 3.5rem;
+}
+
+/* ================================================
+HEADER
+================================================ */
+.header {
+  display: flex;
+  flex-direction: column;
+}
+
+/* BRAND LOGO */
+.brand-logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+.brand-logo h1 {
+  margin: 0;
+  font-weight: 100;
+  letter-spacing: .5rem;
+  font-size: 2.5rem;
+}
+.brand-logo i {
+  font-size: 4rem;
+  padding-right: 1rem;
+  color: var(--dark);
+}
+
+/* NAV MENU */
+.nav-menu--content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 3rem auto;
+}
+.nav-menu--content li a {
+  color: var(--black);
+  font-size: 1.3rem;
+}
+
+/* ================================================
+HERO
+================================================ */
+.hero {
+  height: 30rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--justWhite);
+  text-align: center;
+}
+.hero h1 {
+  color: var(--black);
+  font-weight: 400;
+  font-size: 3rem;
+  letter-spacing: 0.5px;
+  line-height: 3.5rem;
+  margin: 0 3rem;
+}
+
+/* ================================================
+BARRA INFO
+================================================ */
+.barra {
+  height: 37rem;
+  background: var(--warm);
+  color: var(--justWhite);
+  display: flex;
+  align-items: center;
+  padding: 1.5rem 1.8rem;
+  margin: 0;
+}
+.iconos hr {
+  margin: 0;
+  border: .5px solid rgba(255, 255, 255, 0.3);
+}
+.icono {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.icono i {
+  padding-right: 2rem;
+  font-size: 3rem;
+}
+
+/* ================================================
+SERVICIO
+================================================ */
+.servicio-general {
+  margin-bottom: 7rem;
+}
+.servicio-general p {
+  margin-bottom: 4rem;
+}
+.servicio-general h2 {
+  padding: 7rem 0 0 0;
+  margin: 0;
+}
+
+/* TARJETAS SERVICIOS */
+.tarjetas-grid-container {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
+  gap: 4rem 0;
+}
+.tarjeta-informacion {
+  background-color: var(--warm);
+  border-radius: 1rem;
+  max-width: 400px;
+  margin: 0 auto;
+  color: var(--justWhite);
+  padding: 3rem 1.5rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+.tarjeta-informacion p {
+  margin-bottom: 0;
+  font-size: 1.2rem;
+}
+.tarjeta-header {
+  display: flex;
+  align-items: center;
+}
+.tarjeta-header i {
+  font-size: 2.5rem;
+  padding-right: 2rem;
+}
+.tarjeta-header h3 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+/* ================================================
+CURSOS
+================================================ */
+/* CURSOS INTRO H2, H3 */
+.cursos-general {
+  background-color: var(--warm);
+}
+.cursos-txt {
+  padding: 4rem 2rem 0 2rem;
+  color: var(--justWhite);
+}
+.cursos-txt h2 {
+  margin: 1.5rem 0 0 0;
+}
+
+/* CURSOS TARJETAS */
+.card-section {
+  align-items: flex-start;
+  background-color: var(--warm);
+  display: flex;
+  min-height: 100%;
+  justify-content: center;
+  padding: var(--spacing-xxl) var(--spacing-l);
+}
+.card-grid{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-column-gap: var(--spacing-l);
+  grid-row-gap: var(--spacing-l);
+  max-width: var(--width-container);
+  width: 100%;
+}
+.card{
+  list-style: none;
+  position: relative;
+  height: 350px;
+}
+.card:before{
+  content: '';
+  display: block;
+  padding-bottom: 150%;
+  width: 100%;
+}
+.card__background{
+  background-size: cover;
+  background-position: center;
+  border-radius: var(--spacing-l);
+  bottom: 0;
+  filter: brightness(.3) saturate(1.2) contrast(.85);
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.card__content{
+  left: 0;
+  padding: var(--spacing-l);
+  position: absolute;
+  top: 0;
+}
+.card__heading{
+  color: var(--text-lighter);
+  font-size: 3rem;
+  text-shadow: 2px 2px 20px rgba(0,0,0,0.2);
+  line-height: 1.4;
+  word-spacing: 100vw;
+}
+.card__content p{
+  font-size: 2rem;
+}
+
+/* ================================================
+CONTACTO
+================================================ */
+.contacto-general {
+  padding: 5rem 0;
+}
+fieldset {
+  border-radius: 1rem;
+}
+legend {
+  font-size: 2rem;
+  color: #333;
+}
+label {
+  display: block;
+  font-weight: 700;
+}
+fieldset label:first-of-type {
+  margin-top: 3rem;
+}
+input:not([type=submit]) {
+  padding: 1rem;
+  background-color: #e1e1e1;
+  display: block;
+  width: 100%;
+  margin-bottom: 3rem;
+  border: none;
+  border-radius: 1rem;
+}
+fieldset input:last-of-type {
+  color: var(--justWhite);
+  padding: 1rem;
+  background-color: var(--warm);
+  display: block;
+  width: 100%;
+  margin-bottom: 3rem;
+  border: none;
+  border-radius: 1rem;
+}
+
+/* ================================================
+SITE FOOTER
+================================================ */
+footer {
+  background-color: var(--warm);
+  padding: 2rem;
+}
+.footer-nav-social {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+}
+
+/* FOOTER MENU */
+.footer-nav--content li {
+  padding: 1.5rem 0;
+  font-size: 1.3rem;
+  text-transform: lowercase;
+  word-spacing: .1rem;
+  color: var(--justWhite);
+}
+.footer-nav--content li:last-child {
+  padding-bottom: 0;
+}
+/* FOOTER SOCIAL */
+.footer-social {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.footer-social--content {
+  display: flex;
+  flex-direction: row;
+  font-size: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+.footer-social--content li:first-of-type i{
+  padding-left: 0;
+}
+.footer-social--content li i{
+  padding-left: 2.5rem;
+  color: var(--justWhite);
+  font-size: 2.5rem;
+}
+/* FOOTER TEXTO */
+.footer-txt {
+  text-align: center;
+  font-size: .9rem;
+  color: var(--justWhite);
+}
+
+/* ================================================
+SITIO EXTERNO CURSOS
+================================================ */
+/* ================================================
+HEADER CURSOS
+================================================ */
+/* NAV MENU */
+.nav-menu-cursos--content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem auto;
+}
+.nav-menu-cursos--content li a {
+  color: var(--black);
+  font-size: 1.5rem;
+}
+
+/* ================================================
+HERO CURSOS
+================================================ */
+.hero-cursos {
+  height: 30vh;
+  background-color: var(--dark);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-cursos h2 i {
+  margin-right: 1.5rem;
+  font-size: 5.5rem;
+}
+.hero-cursos h2 {
+  color: var(--justWhite);
+  font-weight: 400;
+  font-size: 6rem;
+  letter-spacing: .5px;
+  line-height: 3.5rem;
+  margin: 0 2rem;
+}
+
+/* ================================================
+INFO CURSOS
+================================================ */
+.info-cursos-general {
+  padding: 0 0 1rem 0;
+}
