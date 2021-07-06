@@ -22,6 +22,7 @@ Users should be able to:
 ### Screenshots
 
 [Mobile](assets/screenshots/mobile.png)
+
 [Desktop](assets/screenshots/desktop.png)
 
 ### Links
