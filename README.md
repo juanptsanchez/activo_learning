@@ -28,7 +28,7 @@ Users should be able to:
 ### Links
 
 - Repository URL: [Github](https://github.com/juanptsanchez/activo_learning)
-- Live Site URL: [Netlify](https://dazzling-knuth-48009e.netlify.app/)
+- Live Site URL: [Netlify](https://activo-learning.netlify.app/)
 
 ### Built with
 
