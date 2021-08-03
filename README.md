@@ -47,4 +47,4 @@ Users should be able to:
 
 ## Author
 
-- Website - [Github](https://github.com/juanptsanchez)
+- Juan Pablo Torres Sánchez - [Github](https://github.com/juanptsanchez)
