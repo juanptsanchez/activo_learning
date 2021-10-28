@@ -249,6 +249,12 @@ CURSOS
   right: 0;
   top: 0;
 }
+.card--back1, .card--back3 {
+  background-image: url(../assets/images/course-mini.jpg);
+}
+.card--back2, .card--back4 {
+  background-image: url(../assets/images/code-mini.jpg);
+}
 .card__content{
   left: 0;
   padding: var(--spacing-l);
